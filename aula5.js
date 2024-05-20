@@ -5,7 +5,9 @@ let musica = {
 };
 
 musica.album = 'TROCANDO NOME DO ALBUM';
-console.log(musica.artista);
+console.log(musica.nome);
+
+
 
 
 
