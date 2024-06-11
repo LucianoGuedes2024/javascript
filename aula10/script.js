@@ -24,6 +24,32 @@ img.setAttribute ("alt" , "alteral texto da imagem")
 
         img.setAttribute("alt", "alteral texto da imagem");
 
-    }
+    };
+
+}
+
+
+function changetype() {
+const input = document.getElementsByTagName("input")[0];// indice 0, primeiro elemento da lista de input . que são vários.
+const currenttype = input.getAttribute("type");
+
+
+switch (currenttype) {
+ case 'text' :
+    input.setAttribute('type','number');
+    break;
+
+    case "number" :
+        input. setAttribute('type','radio');
+        break;
+
+        case "radio":
+            input.setAttribute("type ", "ranger");
+            break;
+
+        default:
+       input.setAttribute("type", "text");         
+}
+
 
 }
