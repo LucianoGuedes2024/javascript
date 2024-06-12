@@ -6,19 +6,19 @@
 
 function changeImage() {
 
-    const img = document. getElementById('myImage'); // Aqui conseguimos armazenar o conteúdo da imagem
+    const img = document.getElementById('myImage'); // Aqui conseguimos armazenar o conteúdo da imagem
 
 
-    const currentsrc = img. getAttribute("src"); // Aqui pegamos o atributo src da imagem para trabalhar a troca da mesma.
+    const currentsrc = img.getAttribute("src"); // Aqui pegamos o atributo src da imagem para trabalhar a troca da mesma.
 
 
-    if (currentsrc === 'imagens/img2.jpg' ) {
- // Se a origem atual da imagem for igual imagem sam execute algo.
+    if (currentsrc === 'imagens/img2.jpg') {
+        // Se a origem atual da imagem for igual a imagem  execute algo.
 
-img.setAttribute("src", "imagens/img3.JPG") // usando o seAttribute vamos modificar o valor dela , através do src e especificando a outra img.
+        img.setAttribute("src", "imagens/img3.JPG") // usando o seAttribute vamos modificar o valor dela , através do src e especificando a outra img.
 
-img.setAttribute ("alt" , "alteral texto da imagem")
- 
+        img.setAttribute("alt", "alteral texto da imagem")// usando o setAttribute vamos modificar o valor dela , atrvés do src e especificando a outra img.
+
     } else { // caso contrario faça o processo inverso
         img.setAttribute("src", "imagens/img2.jpg");
 
@@ -30,26 +30,29 @@ img.setAttribute ("alt" , "alteral texto da imagem")
 
 
 function changetype() {
-const input = document.getElementsByTagName("input")[0];// indice 0, primeiro elemento da lista de input . que são vários.
-const currenttype = input.getAttribute("type");
+    const input = document.getElementsByClassName("input")[0];
+    // indice 0, primeiro elemento da lista de input . que são vários.
+
+    const currenttype = input.getAttribute("type");
 
 
-switch (currenttype) {
- case 'text' :
-    input.setAttribute('type','number');
-    break;
+    switch (currenttype) {
+        case 'text':
+            input.setAttribute('type', 'number');
+            break;
 
-    case "number" :
-        input. setAttribute('type','radio');
-        break;
+        case "number":
+            input.setAttribute('type', 'radio');
+            break;
 
         case "radio":
-            input.setAttribute("type ", "ranger");
+            input.setAttribute("type ", "range");
             break;
 
         default:
-       input.setAttribute("type", "text");         
+            input.setAttribute("type", "text");
+            break
+
+
 }
-
-
 }
