@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aula14.css">
     <script src="https://kit.fontawesome.com/5729e0ff2e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+<!-- criamos nosso menu de navegação -->
     <nav class="navbar">
 
+
+        <!--  criamos nossa caixa(div) para guardar os elementos hanburguer quando estiver aberto -->
         <div class="logo">Paisagens</div>
 
 
@@ -30,10 +32,11 @@
 
         <div class="mobile-menu" id="mobileMenu">
 
+            <!-- botão para ser utilizado para fechamneto da lista -->
             <button id="closeButton" class="close">
                 <i class="fas fa-times"></i>
             </button>
-
+  
             <ul class="nav-links-mobile">
                 <li>
                     <a href="">BLOG</a>
@@ -45,13 +48,13 @@
                     <a href="">BLOG</a>
                 </li>
             </ul>
-
+       <!-- fim da caixa do menu hamburguer(quando estiver aberto) -->
         </div>
- 
+  <!-- botão de hanburguer ,ele está fora da div justamente por ser um elemento singular -->
       <button class="hamburger" id="hamburgerButton">
           <i class="fas fa-bars"></i>
       </button>
-
+  <!-- fim do menu navegação -->
     </nav>
 
     <div class="container">
@@ -59,7 +62,7 @@
         <button>Quero conhecer</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="aula14.js"></script>
 </body>
 
 </html>
